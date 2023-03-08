@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Consultando CEP</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/src/css/reset.css"/>
+  <link rel="stylesheet" href="/src/css/main.css"/>
+
+  <!-- FONTE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <div class="conteiner">
+    <header class="cabecalho">
+      <span>Consultando Endereço</span>
+      <div class="logo">
+        <img src="" alt=""/>
+      </div>
+    </header>
+    <section class="formulario-pesquisa">
+      <form>
+        <div class="form-agrupamento">
+          <label for="cep">CEP</label>
+          <input type="text" class="form-controle" maxlength="9" id="cep"/>
+          <small>00000-000</small>
+        </div>
+        <div class="form-agrupamento">
+          <label for="logradouro">Logradouro</label>
+          <input type="text" class="form-controle" id="logradouro" />
+          <small>Rua.</small>
+        </div>
+        <div class="form-agrupamento">
+          <label for="bairro">Bairro</label>
+          <input type="text" class="form-controle" id="bairro"/>
+          <small>Bairro</small>
+        </div>
+        <div class="form-agrupamento">
+          <label for="localidade">Localidade</label>
+          <input type="text" class="form-controle" id="localidade"/>
+          <small>Cidade</small>
+        </div>
+        <div class="form-agrupamento">
+          <label for="uf">UF</label>
+          <input type="text" class="form-controle" id="uf"/>
+          <small>Estado</small>
+        </div>
+      </form>
+    </section>
+  </div>
+  <script src="/src/js/main.js"></script>
 </body>
 </html>
