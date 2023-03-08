@@ -19,6 +19,8 @@ input {
   padding: 16px;
   font-size: 1rem;
   color: var(#696969);
+  border-radius: 5px;
+  border: 1px solid #696969;
 }
 
 label {
