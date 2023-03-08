@@ -1,8 +1,86 @@
 :root {
   --font: 'Golos Text', sans-serif;
-  --roxo: ;
+  --purple: #52307C;
+  --white: #FFF;
+  --white-bg: #FBFBFB;
   --cinza: ;
   --cinza-claro: ;
 
   /* font-weight 500, 600 e 800 */
 }
+
+.conteiner {
+  width: 700px;
+  border: 1px solid var(--purple);
+}
+
+.cabecalho {
+  background-color: var(--purple);  
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecalho span {
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+form {
+  background-color: var(--white-bg);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-agrupamento {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-endereco-fixado {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px
+}
+
+
+/* <div class="">
+    
+      
+      
+    
+      <form>
+        <div class="form-agrupamento">
+          <label for="cep">CEP</label>
+          <input type="text" class="form-controle" maxlength="9" id="cep"/>
+          <small>00000-000</small>
+        </div>
+        <div class="form-agrupamento">
+          <label for="logradouro">Logradouro</label>
+          <input type="text" class="form-controle" id="logradouro" />
+          <small>Rua.</small>
+        </div>
+        <div class="form-agrupamento">
+          <label for="bairro">Bairro</label>
+          <input type="text" class="form-controle" id="bairro"/>
+          <small>Bairro</small>
+        </div>
+        <div class="form-agrupamento">
+          <label for="localidade">Localidade</label>
+          <input type="text" class="form-controle" id="localidade"/>
+          <small>Cidade</small>
+        </div>
+        <div class="form-agrupamento">
+          <label for="uf">UF</label>
+          <input type="text" class="form-controle" id="uf"/>
+          <small>Estado</small>
+        </div>
+      </form>
+    </section>
+  </div> */

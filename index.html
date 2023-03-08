@@ -19,35 +19,32 @@
     <header class="cabecalho">
       <span>Consultando Endereço</span>
       <div class="logo">
-        <img src="" alt=""/>
+        <img src="/src/img/vector-mail.png" alt=""/>
       </div>
     </header>
     <section class="formulario-pesquisa">
       <form>
         <div class="form-agrupamento">
-          <label for="cep">CEP</label>
-          <input type="text" class="form-controle" maxlength="9" id="cep"/>
-          <small>00000-000</small>
+          <input type="text" class="form-controle" placeholder="CEP" maxlength="9" id="cep"/>
+        </div>
+        <div class="form-agrupamento">         
+          <input type="text" placeholder="NOME DA RUA" class="form-controle" id="logradouro" />          
         </div>
         <div class="form-agrupamento">
-          <label for="logradouro">Logradouro</label>
-          <input type="text" class="form-controle" id="logradouro" />
-          <small>Rua.</small>
+          <label>Exemplo: Minha casa, Trabalho</label>       
+          <input type="text" placeholder="NOME DO DESTINATÁRIO" class="form-controle" />          
         </div>
-        <div class="form-agrupamento">
-          <label for="bairro">Bairro</label>
-          <input type="text" class="form-controle" id="bairro"/>
-          <small>Bairro</small>
-        </div>
-        <div class="form-agrupamento">
-          <label for="localidade">Localidade</label>
-          <input type="text" class="form-controle" id="localidade"/>
-          <small>Cidade</small>
-        </div>
-        <div class="form-agrupamento">
-          <label for="uf">UF</label>
-          <input type="text" class="form-controle" id="uf"/>
-          <small>Estado</small>
+        <div class="form-endereco-fixado">
+          <div class="form-agrupamento">
+            <input type="text" class="form-controle" id="bairro" placeholder="BAIRRO"/>          
+          </div>
+          <div class="form-agrupamento">
+            <input type="text" class="form-controle" id="localidade" placeholder="localidade"/>          
+            
+          </div>
+          <div class="form-agrupamento">          
+            <input type="text" class="form-controle" id="uf" placeholder="UF"/>          
+          </div>
         </div>
       </form>
     </section>
