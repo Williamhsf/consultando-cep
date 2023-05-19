@@ -23,5 +23,5 @@ cep.addEventListener("blur", (e) => {
     .then((response) =>{response.json()
     .then((data) => showData(data))
     })
-    .catch((e) => console.log("Deus ruim" + e,message));
+    .catch((e) => console.log("Deu ruim" + e,message));
 })
